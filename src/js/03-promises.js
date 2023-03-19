@@ -15,7 +15,7 @@ formEl.addEventListener('submit', e => {
     return;
   }
   for (let index = 0; index < amountPromises; index += 1) {
-    delay = firstDelay + stepNumber * index;
+    let delay = firstDelay + stepNumber * index;
 
     createPromise(index, delay);
   }

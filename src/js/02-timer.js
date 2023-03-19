@@ -26,7 +26,6 @@ new flatpickr('input#datetime-picker', {
         const intervalId = setInterval(() => {
           currentDate = Date.now();
           const timeDifference = targetData - currentDate;
-          console.log(timeDifference);
           const timerTime = convertMs(timeDifference);
           insertTimeInDom(timerTime);
           if (timeDifference < 1000) {
