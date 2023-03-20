@@ -14,7 +14,7 @@ formEl.addEventListener('submit', e => {
     Notify.failure('insert only positive numbers');
     return;
   }
-  for (let index = 0; index < amountPromises; index += 1) {
+  for (let index = 1; index < amountPromises + 1; index += 1) {
     let delay = firstDelay + stepNumber * index;
 
     createPromise(index, delay);

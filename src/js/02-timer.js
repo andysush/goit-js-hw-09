@@ -14,6 +14,7 @@ startBtnEl.disabled = true;
 new flatpickr('input#datetime-picker', {
   enableTime: true,
   time_24hr: true,
+  defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
     let currentDate = Date.now();
